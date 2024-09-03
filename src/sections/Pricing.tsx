@@ -64,8 +64,8 @@ export const Pricing = () => {
           <p className="section-description mt-5">Free forever. Upgrade for unlimited tasks, better security, and exclusive features.</p>
         </div>
         <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
-          {pricingTiers.map((tier) => (
-            <div className={twMerge("card", tier.inverse && "bg-black border-black text-white")}>
+          {pricingTiers.map((tier: typeof pricingTiers[0]) => (
+            <div key={tier.title} className={twMerge("card", tier.inverse && "bg-black border-black text-white")}>
               <div className="flex justify-between">
                 <h3 className={twMerge("text-lg font-bold text-black/50", tier.inverse && "text-white/60")}>{tier.title}</h3>
                 
@@ -87,7 +87,7 @@ export const Pricing = () => {
 
               <ul className="flex flex-col gap-5 mt-8">
                 {tier.features.map((feature) => (
-                  <li className="text-sm flex items-center gap-4">
+                  <li key={feature} className="text-sm flex items-center gap-4">
                     <CheckIcon className='size-6'/>
                     <span>{feature}</span>
                   </li>
