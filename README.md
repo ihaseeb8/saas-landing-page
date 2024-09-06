@@ -1,10 +1,24 @@
-﻿# saas-landing-page
-This is a next js project
+﻿A landing page for AI Site
 
-Live Deployment : https://saas-landing-page-olive-sigma.vercel.app/
+Tools Used: Next.js, React, Framer Motion, Tailwind CSS
 
-To run locally:
+## Live Version
+Check out the [Live Demo](https://saas-landing-page.haseeb.info/)
 
-Step 1: clone this repo
-Step 2: npm install
-step 3: npm run dev
+
+
+## To run locally
+
+First, clone the repo:
+
+then run the script according to your package manager
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
